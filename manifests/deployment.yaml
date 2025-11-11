@@ -14,10 +14,10 @@ spec:
     spec:
       containers:
       - name: todo-get-task-api
-        image: zincovit.azurecr.io/todo-get-tasks-api:v1
+        image: bisleryregistry.azurecr.io/todo-get-tasks-api:v1
         ports:
         - containerPort: 8000
         env: 
         - name: CONNECTION_STRING
-          value: "Driver={ODBC Driver 18 for SQL Server};Server=tcp:sql-server-todo.database.windows.net,1433;Database=tododb;Uid=azureuser;Pwd=Abhilash@7878;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;"
+          value: "Driver={ODBC Driver 18 for SQL Server};Server=tcp:todosqlserver1.database.windows.net,1433;Database=todo-db;Uid=azureuser;Pwd=Abhilash@7878;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;" 
 
